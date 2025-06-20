@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #ffffff;
+    --main-black: #000000;
+    --orange: #EC6D1D;
+    --main-grey: #D3D4D6;
+    --green: #6ABF4B;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--main-black);
+}
+section {
+    padding: 5rem 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+img {
+    width: 100%;
+}
+.container {
+    max-width: 136rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.df {
+    display: flex;
+}
+
+.db {
+    display: block;
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.aic {
+    align-items: center;
+}
+
+.aifs {
+    align-items: flex-start;
+}
+
+.aife {
+    align-items: flex-end;
+}
+
+.ais {
+    align-items: stretch;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcfs {
+    justify-content: flex-start;
+}
+
+.jcfe {
+    justify-content: flex-end;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+.main-header {
+    padding: 3.5rem 0;
+}
+.header-logo {
+    max-width: 20rem;
+}
+.header-menu {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    max-width: fit-content;
+    width: 100%;
+}
+.header-menu li {
+    padding: 0.5rem 2.5rem;
+    text-align: center;
+}
+.header-menu li:not(:first-child) {
+    border-left: 0.1rem solid var(--main-grey);
+}
+.header-menu li a {
+    display: block;
+    width: fit-content;
+}
+.header-menu li:hover a {
+    color: var(--orange);
+    transition: .3s ease-in;
+}
+.header-menu li:not(hover) a {
+    transition: .3s ease-in;
+}
+.header-menu .header-lang {
+    padding: 0.5rem 1.2rem;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 1.1rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.header-bottom {
+    margin-top: 3rem;
+}
+.header-search {
+    max-width: 38rem;
+    width: 100%;
+    position: relative;
+}
+.header-search input {
+    padding: 1.2rem 2.4rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    border: 0.1rem solid var(--green);
+    outline: none;
+    font-size: 1.6rem;
+}
+.header-search:after {
+    display: block;
+    position: absolute;
+    right: 2.4rem;
+    top: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    content: url(../img/loop.svg);
+}
+.header-links {
+    gap: 2.6rem;
+}
+.header-link {
+    padding: 1.1rem 1.25rem;
+    border-radius: 1.5rem;
+    border: 0.1rem solid var(--green);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.header-link i {
+    padding-top: 0.2rem;
+    padding-left: 0.4rem;
+}
+/*HERO*/
+.hero {
+    padding-bottom: 0rem;
+    background: linear-gradient(0deg,rgba(255, 164, 0, 1) 0%, rgba(255, 164, 0, 1) 10%, rgba(247, 235, 158, 0.1) 65%, rgba(255, 255, 255, 0) 85%);
+}
+.hero-container {
+    max-width: 192rem;
+}
+.hero-content {
+    position: relative;
+}
+.hero-dog {
+    position: relative;
+    z-index: 1;
+    max-width: 57rem;
+
+}
+.hero-cow {
+    position: absolute;
+    z-index: 2;
+    max-width: 58.5rem;
+    left: 27%;
+}
+.hero-bee {
+    position: absolute;
+    z-index: 3;
+    max-width: 64.5rem;
+    right: 0rem;
+}
+.hero-image {
+    width: 100%;
+}
+.hero-image img {
+    width: 100%;
+}
