@@ -13,6 +13,7 @@
     --orange: #FFA400;
     --main-grey: #757575;
     --green: #6ABF4B;
+    --lightgreen: #EBFFE4;
 }
 html {
     font-size: 10px;
@@ -31,6 +32,7 @@ a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
+    display: block;
 }
 img {
     width: 100%;
@@ -90,6 +92,12 @@ img {
 
 .pa {
     position: absolute;
+}
+.tac {
+    text-align: center;
+}
+.gap15 {
+    gap: 1.5rem;
 }
 .main-header {
     padding: 3.5rem 0;
@@ -239,13 +247,17 @@ img {
 .hero-content a > p {
     text-align: center;
     font-size: 1.8rem;
-    min-height: 4.2rem;
-    padding: 1.4rem 7rem;
+    min-height: 6.4rem;
+    padding: 1.4rem 5.6rem;
     border-radius: 3.4rem;
     color: var(--white);
-    width: fit-content;
     margin-right: auto;
     margin-left: auto;
+    max-width: 26rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero-bee p, .hero-cow p {
     margin-top: 5rem;
@@ -258,7 +270,7 @@ img {
 .hero-dog {
     position: relative;
     z-index: 2;
-    max-width: 72rem;
+    max-width: 45rem;
     margin-top: 12rem;
 
 }
@@ -267,12 +279,12 @@ img {
     z-index: 3;
     max-width: 52rem;
     margin-top: 5rem;
-    margin-left: -10rem;
+    margin-left: -7rem;
 }
 .hero-bee {
     position: relative;
     z-index: 1;
-    max-width: 53rem;
+    max-width: 50rem;
     margin-right: -10rem;
 }
 .hero-image {
@@ -289,14 +301,14 @@ img {
 }
 .about-left {
     padding: 6.8rem 5.2rem;
-    max-width: 70%;
+    max-width: 75%;
     width: 100%;
     background: var(--white);
     border-radius: 6.5rem;
     clip-path: polygon(0% 0%, 75% 0%, 93% 52%, 75% 100%, 0% 100%);
 }
 .about-right {
-    max-width: 30%;
+    max-width: 25%;
     width: 100%;
 }
 .about-text {
@@ -307,7 +319,7 @@ img {
     line-height: 2.4rem;
     max-width: 80%;
 }
-.about-title {
+.about-title, .page-title {
     font-size: 4.5rem;
     font-weight: 600;
 }
@@ -328,4 +340,124 @@ img {
 }
 .about-button:not(hover) {
     transition: .3s ease-in;
+}
+.about-right {
+    gap: 2rem;
+    font-size: 3.3rem;
+    color: var(--white);
+}
+/*BENEFITS*/
+.benefits .container {
+    gap: 3.4rem;
+}
+.benefit {
+    max-width: 25%;
+    width: 100%;
+    padding: 2.8rem 2.5rem;
+    background: var(--lightgreen);
+    border-radius: 2.2rem;
+    box-shadow: 0px 3px 8px 5px rgba(89, 95, 99, 0.2);
+    gap: 2rem;
+}
+.benefit h2 {
+    font-size: 8.5rem;
+    font-weight: 900;
+    line-height: 80%;
+    letter-spacing: 0.5rem;
+    color: var(--main-grey);
+}
+.benefit:nth-child(1) .benefit-top p {
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-right: 1rem;
+    line-height: 3rem;
+}
+.benefit-bottom {
+    font-size: 1.8rem;
+}
+.benefit-top {
+    font-size: 2.6rem;
+}
+.benefit:last-child p {
+    line-height: 2.9rem;
+}
+/*ADVERTISE*/
+.advertise-swiper {
+    position: relative;
+}
+.advertise-links {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 2;
+}
+.advertise-slide {
+    border-radius: 1.5rem;
+    overflow: hidden;    
+}
+.advertise-slide img {
+    border-radius: 1.5rem;
+}
+.advertise-pagination {
+    position: relative;
+    margin-top: 5.5rem;
+    display: flex;
+    gap: 9rem;
+    justify-content: center;
+    z-index: 1;
+}
+.advertise .swiper-pagination-bullet-active {
+    background: var(--green);
+}
+.advertise .swiper-pagination-bullet {
+    width: 2rem;
+    height: 2rem;
+}
+.advertise-links {
+    gap: 5rem;
+}
+.advertise-more {
+    background: var(--green);
+    padding: 1.1rem 3.8rem;
+    border-radius: 2.1rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/*NEW*/
+.new-wrapper {
+    margin-top: 7.2rem;
+}
+.new-slide {
+    max-width: 33%;
+    width: 100%;
+}
+.new-button {
+    max-width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 3.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1.6rem;
+}
+.new-text {
+    margin-top: 2rem;
+    gap: 0.2rem;
+}
+.new-title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.new-subtitle {
+    font-size: 2.6rem;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+.new-description {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
