@@ -1,7 +1,7 @@
         <section class="hero systems-hero pr">
             <div class="container hero-container df fdc">
                 <div class="hero-content df jcsb fdc pr">
-                    <h2 class="page-title pr">Системы лечения животных Агробиопром</h2>
+                    <h2 class="page-title pr tac"><?php the_title(); ?></h2>
                     <div class="hero-image">
                         <img src="<?php bloginfo('template_directory'); ?>/img/systems-page/hero.png" alt="img">
                     </div>

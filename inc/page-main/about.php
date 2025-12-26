@@ -15,15 +15,15 @@
                                 совершенству в каждой детали нашей работы. Вместе с вами мы создаем будущее, где
                                 здоровье животных – наш главный приоритет.</p>
                         </div>
-                        <a href="#" class="about-button">Подробнее</a>
+                        <a href="/about" class="about-button">Подробнее</a>
                     </div>
                     <div class="about-right df fdc">
-                        <a href="#" class="">История</a>
-                        <a href="#" class="">Миссия</a>
-                        <a href="#" class="">Системы лечения</a>
-                        <a href="#" class="">Производство</a>
-                        <a href="#" class="">Честный знак</a>
-                        <a href="#" class="">Карьера</a>
+                        <a href="/history" class="">История</a>
+                        <a href="/mission" class="">Миссия</a>
+                        <a href="/healing-systems" class="">Системы лечения</a>
+                        <a href="/production" class="">Производство</a>
+                        <a href="/znak" class="">Честный знак</a>
+                        <a href="/career" class="">Карьера</a>
                     </div>
                 </div>
             </div>

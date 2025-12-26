@@ -1,7 +1,7 @@
         <section class="hero history-hero pr">
             <div class="container hero-container df fdc">
                 <div class="hero-content df jcsb pr">
-                    <h2 class="page-title pa">Наш путь к заботе</h2>
+                    <h2 class="page-title pa tac">Наш путь к заботе</h2>
                     <div class="hero-image">
                         <img src="<?php bloginfo('template_directory'); ?>/img/history-page/hero.png" alt="img">
                     </div>

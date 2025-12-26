@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./dist/bundle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main about-page catalog catalog-bee">
+        <div class="pattern1 left-pattern pattern">
+            <img src="/img/pattern1.png" alt="pattern">
+        </div>
+        <div class="pattern1 right-pattern pattern">
+            <img src="/img/pattern1.png" alt="pattern">
+        </div>
+        <div class="pattern2 left-pattern pattern">
+            <img src="/img/pattern2.png" alt="pattern">
+        </div>
+        <div class="pattern2 right-pattern pattern">
+            <img src="/img/pattern2.png" alt="pattern">
+        </div>
+        <div class="pattern3 left-pattern pattern">
+            <img src="/img/pattern3.png" alt="pattern">
+        </div>
+        <div class="pattern4 right-pattern pattern">
+            <img src="/img/pattern4.png" alt="pattern">
+        </div>
+        <header class="main-header">
+            <div class="container df fdc">
+                <div class="header-top df aic jcsb">
+                    <a href="/" class="header-logo">
+                        <img src="/img/main-logo.svg" alt="logo">
+                    </a>
+                    <ul class="header-menu df aic">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Научные разработки</a></li>
+                        <li><a href="#">Честный знак</a></li>
+                        <li><a href="#">Где купить</a></li>
+                    </ul>
+                    <div class="hero-links df fdc">
+                        <div class="header-social df jcc aic">
+                            <a href="#" class="social-link tg-link">
+                                <img src="/img/tg_black.svg" alt="tg">
+                            </a>
+                            <a href="#" class="social-link vk-link">
+                                <img src="/img/vk_black.svg" alt="vk">
+                            </a>
+                        </div>
+                        <div class="header-lang">РУС / ENG</div>
+                    </div>
+                </div>
+                <div class="header-bottom df aic jcsb">
+                    <div class="header-search">
+                        <input class="df" type="search" placeholder="поиск по товарам">
+                    </div>
+                    <div class="header-links df aic">
+                        <a href="#" class="header-link df aic">Животные компаньоны<i>></i></a>
+                        <a href="#" class="header-link df aic">Продуктивные животные<i>></i></a>
+                        <a href="#" class="header-link df aic">Пчёлы<i>></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero catalog-hero">
+            <div class="container df fdc gap50">
+                <div class="top block df aic jcsb">
+                    <div class="block df aic gap40">
+                        <h2 class="page-title pr">Каталог</h2>
+                        <a href="#" class="category pr df aic">
+                            <div class="icon">
+                                <img src="./img/catalog-page/icon_bee.svg" alt="bee">
+                            </div>
+                            <p class="text">Пчелы</p>
+                        </a>
+                    </div>
+                    <p class="subtitle">Защита и развитие</p>
+                </div>
+                <div class="bottom block">
+                    <img src="./img/news-page/hero.png" alt="hero">
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container df fdc gap30">
+                <h2 class="title section-title tac">Профессиональные безопасные продукты для сохранения здоровья
+                    пчелиных семей и повышения урожайности</h2>
+                <div class="text df fdc gap30">
+                    <p><b>Агробиопром</b> – компания с 30-летним опытом заботы о здоровье пчелиных семей, которая
+                        создает здоровый и счастливый союз человека и пчел. Наша миссия - обеспечить гармоничное
+                        сосуществование людей и пчел, поддерживая здоровье пчелиных семей и благополучие пасеки.</p>
+                    <p>Мы разработали комплексные системы лечения и профилактики, которые обеспечивают здоровую и
+                        комфортную жизнь пчел в современных условиях, помогают сохранить качество сот и производство
+                        высококачественного меда, а также создают оптимальные условия для успешной работы пчеловодов.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="veteriniser" id="vet">
+            <div class="container filters df fdc gap30">
+                <div class="top df aic jcsb">
+                    <div class="text df fdc gap20">
+                        <h2 class="title">Ветеринайзер Агробиопром</h2>
+                        <p class="subtitle">Ветеринайзер Агробиопром –это современная система подбора средств под
+                            конкретные задачи вашего пчеловодческого хозяйства. </p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/catalog-page/icon_bee.svg" alt="bee">
+                    </div>
+                </div>
+
+                <div class="bottom filter right">
+                    <form action="" class="form df aife" id="veteriniser" name="veteriniser">
+                        <div class="fields df fww">
+                            <div class="field df fdc">
+                                <span class="label">Болезни / назначения</span>
+
+                                <div class="select" data-name="disease">
+                                    <button type="button" class="toggle">
+                                        <span class="value" data-placeholder="Выберите тип отчёта">
+                                            Выберите значение
+                                        </span>
+                                        <span class="arrow"></span>
+                                    </button>
+
+                                    <div class="dropdown">
+                                        <button type="button" class="option" data-value="basic">Вариант 1</button>
+                                        <button type="button" class="option" data-value="full">Вариант 2</button>
+                                        <button type="button" class="option" data-value="expert">Вариант 3</button>
+                                    </div>
+
+                                    <input type="hidden" name="disease" value="">
+                                </div>
+                            </div>
+
+                            <div class="field df fdc">
+                                <span class="label">Биотехнические средства</span>
+                                <div class="select" data-name="biotech">
+                                    <button type="button" class="toggle">
+                                        <span class="value" data-placeholder="Выберите тип отчёта">
+                                            Выберите значение
+                                        </span>
+                                        <span class="arrow"></span>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button type="button" class="option" data-value="basic">Вариант 1</button>
+                                        <button type="button" class="option" data-value="full">Вариант 2</button>
+                                        <button type="button" class="option" data-value="expert">Вариант 3</button>
+                                    </div>
+                                    <input type="hidden" name="biotech" value="">
+                                </div>
+                            </div>
+
+                            <div class="field df fdc">
+                                <span class="label">Корма</span>
+                                <div class="select" data-name="food">
+                                    <button type="button" class="toggle">
+                                        <span class="value" data-placeholder="Выберите тип отчёта">
+                                            Выберите значение
+                                        </span>
+                                        <span class="arrow"></span>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button type="button" class="option" data-value="basic">Вариант 1</button>
+                                        <button type="button" class="option" data-value="full">Вариант 2</button>
+                                        <button type="button" class="option" data-value="expert">Вариант 3</button>
+                                    </div>
+                                    <input type="hidden" name="food" value="">
+                                </div>
+                            </div>
+
+                            <div class="field df fdc">
+                                <span class="label">Сопутствующие товары</span>
+                                <div class="select" data-name="additional">
+                                    <button type="button" class="toggle">
+                                        <span class="value" data-placeholder="Выберите тип отчёта">
+                                            Выберите значение
+                                        </span>
+                                        <span class="arrow"></span>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button type="button" class="option" data-value="basic">Вариант 1</button>
+                                        <button type="button" class="option" data-value="full">Вариант 2</button>
+                                        <button type="button" class="option" data-value="expert">Вариант 3</button>
+                                    </div>
+                                    <input type="hidden" name="additional" value="">
+                                </div>
+                            </div>
+
+                            <div class="field df fdc">
+                                <span class="label">Образ жизни животного</span>
+                                <div class="select" data-name="active">
+                                    <button type="button" class="toggle">
+                                        <span class="value" data-placeholder="Выберите тип отчёта">
+                                            Выберите значение
+                                        </span>
+                                        <span class="arrow"></span>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button type="button" class="option" data-value="basic">Вариант 1</button>
+                                        <button type="button" class="option" data-value="full">Вариант 2</button>
+                                        <button type="button" class="option" data-value="expert">Вариант 3</button>
+                                    </div>
+                                    <input type="hidden" name="active" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btns df fdc gap15">
+                            <button class="btn reset">Сбросить настройки</button>
+                            <input type="submit" class="btn send" value="Показать предложения">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="container masonry df ais gap30">
+                <div class="block df fdc jcsb">
+                    <p class="title">С помощью удобных фильтров вы сможете найти оптимальные решения для:</p>
+                    <div class="icon">
+                        <img src="./img/catalog-page/shield.svg" alt="shield">
+                    </div>
+                </div>
+                <div class="block df ais fww">
+                    <div class="item df fdc jcc">
+                        <div class="icon">
+                            <img src="./img/catalog-page/icon1.svg" alt="icon">
+                        </div>
+                        <p class="tac">Профилактики и лечения заболеваний пчелиных семей</p>
+                    </div>
+                    <div class="item df fdc jcc">
+                        <div class="icon">
+                            <img src="./img/catalog-page/icon2.svg" alt="icon">
+                        </div>
+                        <p class="tac">Поддержки репродуктивного здоровья</p>
+                    </div>
+                    <div class="item df fdc jcc">
+                        <div class="icon">
+                            <img src="./img/catalog-page/icon3.svg" alt="icon">
+                        </div>
+                        <p class="tac">Повышение продуктивности</p>
+                    </div>
+                    <div class="item df fdc jcc">
+                        <div class="icon">
+                            <img src="./img/catalog-page/icon4.svg" alt="icon">
+                        </div>
+                        <p class="tac">Профилактики и лечения заболеваний пчелиных семей</p>
+                    </div>
+                    <div class="item df fdc jcc">
+                        <div class="icon">
+                            <img src="./img/catalog-page/icon5.svg" alt="icon">
+                        </div>
+                        <p class="tac">Поддержания здоровья сот</p>
+                    </div>
+                    <div class="item df fdc jcc">
+                        <div class="icon">
+                            <img src="./img/catalog-page/icon6.svg" alt="icon">
+                        </div>
+                        <p class="tac">Создания комфортных условий содержания</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container end">
+                <p>Доверьте здоровье ваших пчел профессионалам – воспользуйтесь системой подбора препаратов
+                    Агробиопром прямо сейчас!</p>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <div class="container df fdc">
+                <h2 class="section-title tac">Препараты</h2>
+                <div class="grid df fww">
+                    <div class="item df fdc gap15">
+                        <div class="img">
+                            <img src="./img/catalog-page/item.png" alt="img">
+                        </div>
+                        <a href="#" class="btn">Подробнее</a>
+                        <p class="title">Апистанзоль</p>
+                        <p class="description"><span>Применение:</span><br>От гельминтов...</p>
+                    </div>
+                    <div class="item df fdc gap15">
+                        <div class="img">
+                            <img src="./img/catalog-page/item.png" alt="img">
+                        </div>
+                        <a href="#" class="btn">Подробнее</a>
+                        <p class="title">Апистанзоль</p>
+                        <p class="description"><span>Применение:</span><br>От гельминтов...</p>
+                    </div>
+                    <div class="item df fdc gap15">
+                        <div class="img">
+                            <img src="./img/catalog-page/item.png" alt="img">
+                        </div>
+                        <a href="#" class="btn">Подробнее</a>
+                        <p class="title">Апистанзоль</p>
+                        <p class="description"><span>Применение:</span><br>От гельминтов...</p>
+                    </div>
+                    <div class="item df fdc gap15">
+                        <div class="img">
+                            <img src="./img/catalog-page/item.png" alt="img">
+                        </div>
+                        <a href="#" class="btn">Подробнее</a>
+                        <p class="title">Апистанзоль</p>
+                        <p class="description"><span>Применение:</span><br>От гельминтов...</p>
+                    </div>
+                    <div class="item df fdc gap15">
+                        <div class="img">
+                            <img src="./img/catalog-page/item.png" alt="img">
+                        </div>
+                        <a href="#" class="btn">Подробнее</a>
+                        <p class="title">Апистанзоль</p>
+                        <p class="description"><span>Применение:</span><br>От гельминтов...</p>
+                    </div>
+                    <div class="item df fdc gap15">
+                        <div class="img">
+                            <img src="./img/catalog-page/item.png" alt="img">
+                        </div>
+                        <a href="#" class="btn">Подробнее</a>
+                        <p class="title">Апистанзоль</p>
+                        <p class="description"><span>Применение:</span><br>От гельминтов...</p>
+                    </div>
+                </div>
+                <div class="pagination df aic gap30">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="container">
+                <div class="list df fdc gap100">
+                    <div class="item df gap30 aic">
+                        <div class="img">
+                            <img src="./img/catalog-page/banner.png" alt="banner">
+                        </div>
+                        <div class="text">
+                            <p>Для комфортной и безопасной работы с ульем мы предлагаем полный комплект защитной экипировки: специальные комбинезоны из прочных материалов с защитными манжетами, маски-сетки с жестким каркасом для максимальной защиты лица, перчатки с фиксаторами, надежную обувь и специальные бахилы. В ассортименте также представлен профессиональный дымарь для усмирения пчел во время работы. Все средства защиты разработаны с учетом потребностей пчеловодов и обеспечивают максимальную безопасность при взаимодействии с пчелиными семьями.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slogan">
+            <div class="container df fdc aic">
+                <div class="img logo">
+                    <img src="./img/main-logo.svg" alt="logo">
+                </div>
+                <div class="text df aic gap15">
+                    <div class="check">
+                        <img src="./img/catalog-page/check.svg" alt="check">
+                    </div>
+                    <p class="tac">сохраняет продуктивность для животных и комфорт для ветврачей</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container df jcsb aife">
+                <a href="/" class="footer-logo">
+                    <img src="/img/main-logo.svg" alt="logo">
+                </a>
+                <p class="footer-copyright">© 2025 Агробиопром</p>
+                <div class="footer-links df fdc">
+                    <a href="">Политика конфиденциальности</a>
+                    <a href="">Пользовательское соглашение</a>
+                    <a href="">Описание рекомендательных алгоритмов</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./dist/main.js"></script>
+    <script src="/js/swiper.js"></script>
+</body>
+
+</html>

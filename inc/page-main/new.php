@@ -7,7 +7,7 @@
                             <div class="new-image">
                                 <img src="<?php bloginfo('template_directory'); ?>/img/binakar.png" alt="binakar">
                             </div>
-                            <a href="#" class="new-button">Подробнее</a>
+                            <a href="/product" class="new-button">Подробнее</a>
                             <div class="new-text df fdc">
                                 <p class="new-title">Бинакар</p>
                                 <p class="new-subtitle">Капли на холку</p>
@@ -18,7 +18,7 @@
                             <div class="new-image">
                                 <img src="<?php bloginfo('template_directory'); ?>/img/binakar.png" alt="binakar">
                             </div>
-                            <a href="#" class="new-button">Подробнее</a>
+                            <a href="/product" class="new-button">Подробнее</a>
                             <div class="new-text df fdc">
                                 <p class="new-title">Бинакар</p>
                                 <p class="new-subtitle">Капли на холку</p>
@@ -29,7 +29,7 @@
                             <div class="new-image">
                                 <img src="<?php bloginfo('template_directory'); ?>/img/binakar.png" alt="binakar">
                             </div>
-                            <a href="#" class="new-button">Подробнее</a>
+                            <a href="/product" class="new-button">Подробнее</a>
                             <div class="new-text df fdc">
                                 <p class="new-title">Бинакар</p>
                                 <p class="new-subtitle">Капли на холку</p>
@@ -40,7 +40,7 @@
                             <div class="new-image">
                                 <img src="<?php bloginfo('template_directory'); ?>/img/binakar.png" alt="binakar">
                             </div>
-                            <a href="#" class="new-button">Подробнее</a>
+                            <a href="/product" class="new-button">Подробнее</a>
                             <div class="new-text df fdc">
                                 <p class="new-title">Бинакар</p>
                                 <p class="new-subtitle">Капли на холку</p>

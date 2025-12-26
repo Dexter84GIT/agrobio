@@ -5,32 +5,27 @@
                     <li><a href="/about">История</a></li>
                     <li><a href="/mission">Миссия</a></li>
                     <li><a href="/healing-systems">Системы лечения</a></li>
-                    <li><a href="#">Карьера</a></li>
-                    <li>Производство</li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/career">Карьера</a></li>
+                    <li><a href="/production">Производство</a></li>
+                    <li><a href="/news">Новости</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
                 </ul>
                 <ul class="links-block df fdc">
                     <li class="links-title">каталог</li>
-                    <li><a href="#">Животные компаньоны</a></li>
-                    <li><a href="#">Продуктивные животные</a></li>
-                    <li><a href="#">Пчелы</a></li>
+                    <li><a href="/catalog-pets">Животные-компаньоны</a></li>
+                    <li><a href="/catalog-cattle">Продуктивные животные</a></li>
+                    <li><a href="/catalog-bee">Пчёлы</a></li>
                 </ul>
                 <ul class="links-block df fdc">
-                    <li class="links-title">научные разработки</li>
-                    <li><a href="#">Животные компаньоны</a></li>
-                    <li><a href="#">Продуктивные животные</a></li>
-                    <li><a href="#">Пчелы</a></li>
+                    <li class="links-title">Научные разработки</li>
+                    <li><a href="/science-pets">Животные-компаньоны</a></li>
+                    <li><a href="/science-cattle">Продуктивные животные</a></li>
+                    <li><a href="/science-bee">Пчёлы</a></li>
                 </ul>
                 <ul class="links-block df fdc">
-                    <li class="links-title"><a href="#">Честный <br>знак</a></li>
+                    <li class="links-title"><a href="/znak">Честный <br>знак</a></li>
                 </ul>
-                <ul class="links-block df fdc">
-                    <li class="links-title">где купить</li>
-                    <li><a href="#">Розница</a></li>
-                    <li><a href="#">Оптовые поставки</a></li>
-                </ul>
-                <ul class="links-block df fdc">
+                <ul class="links-block df fdc jcfe">
                     <li class="links-phone"><a href="#">+7 (985) 411-26-20</a></li>
                     <li class="links-phone"><a href="#">+7 (495) 607-67-81</a></li>
                     <li class="links-phone"><a href="#">+7 (495) 608-64-81</a></li>
@@ -67,6 +62,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="<?php bloginfo('template_directory');?>/js/swiper.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/dist/main.js"></script>
 </body>
 
 </html>
