@@ -19,7 +19,6 @@
     --light-gray: #e8e8e8;
     --light-blue: #F1F4F6;
     --soft-gray: #e0e0e0;
-
 }
 
 $white: #ffffff;
@@ -43,6 +42,19 @@ body {
     font-weight: normal;
     font-style: normal;
     color: var(--main-black);
+    --accent: #FFA400;
+}
+
+body.category-cattle {
+    --accent: #6ABF4B;
+}
+
+body.category-bees {
+    --accent: #FFA400;
+}
+
+body.category-pets {
+    --accent: #FFA400;
 }
 
 section {
@@ -273,6 +285,7 @@ img {
 
                 & li {
                     background: $white;
+
                     &:last-child {
                         padding-bottom: 1rem;
                     }
@@ -443,12 +456,12 @@ img {
 }
 
 .hero-bee p,
-.hero-cow p {
+.hero-dog p {
     margin-top: 5rem;
     background: var(--orange);
 }
 
-.hero-dog p {
+.hero-cow p {
     margin-top: 2rem;
     background: var(--green);
 }
@@ -597,119 +610,153 @@ img {
 }
 
 /*ADVERTISE*/
-.advertise-swiper {
-    position: relative;
-}
+.advertise {
+    &-swiper {
+        position: relative;
+    }
 
-.advertise-links {
-    position: absolute;
-    bottom: 0rem;
-    right: 0rem;
-    z-index: 2;
-}
+    &-links {
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        z-index: 2;
+    }
 
-.advertise-wrapper {
-    border-radius: 1.5rem;
-}
+    &-wrapper {
+        border-radius: 1.5rem;
+    }
 
-.advertise-slide {
-    border-radius: 1.5rem;
-    overflow: hidden;
-}
+    &-slide {
+        border-radius: 1.5rem;
+        overflow: hidden;
+    }
 
-.advertise-slide img {
-    border-radius: 1.5rem;
-}
+    &-slide img {
+        border-radius: 1.5rem;
+    }
 
-.advertise-pagination {
-    position: relative;
-    margin-top: 5.5rem;
-    display: flex;
-    gap: 9rem;
-    justify-content: center;
-    z-index: 1;
-}
+    &-pagination {
+        position: relative;
+        margin-top: 5.5rem;
+        display: flex;
+        gap: 9rem;
+        justify-content: center;
+        z-index: 1;
+    }
 
-.advertise .swiper-pagination-bullet-active {
-    background: var(--green);
-}
+    & .swiper-pagination-bullet-active {
+        background: var(--green);
+    }
 
-.advertise .swiper-pagination-bullet {
-    width: 2rem;
-    height: 2rem;
-}
+    & .swiper-pagination-bullet {
+        width: 2rem;
+        height: 2rem;
+    }
 
-.advertise-links {
-    gap: 5rem;
-}
+    &-links {
+        gap: 5rem;
+    }
 
-.advertise-more {
-    background: var(--green);
-    padding: 1.1rem 3.8rem;
-    border-radius: 2.1rem;
-    color: var(--white);
-    font-size: 1.5rem;
-    cursor: pointer;
+    &-more {
+        background: var(--green);
+        padding: 1.1rem 3.8rem;
+        border-radius: 2.1rem;
+        color: var(--white);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 }
 
 /*NEW*/
-.new-wrapper {
-    margin-top: 7.2rem;
-}
+.new {
+    &-wrapper {
+        margin-top: 7.2rem;
+    }
 
-.new-slide {
-    max-width: 33%;
-    width: 100%;
-}
+    &-slide {
+        max-width: 33%;
+        width: 100%;
 
-.new-button {
-    max-width: 100%;
-    text-align: center;
-    padding: 1.5rem;
-    background: var(--green);
-    color: var(--white);
-    border-radius: 3.2rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-top: 1.6rem;
-}
+        & .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 43.8rem;
+            height: 100%;
+            object-fit: cover;
+            background: $light-blue;
+            border-radius: 1.2rem;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+        }
+    }
 
-.new-text {
-    margin-top: 2rem;
-    gap: 0.2rem;
-}
+    &-button {
+        max-width: 100%;
+        text-align: center;
+        padding: 1.5rem;
+        background: var(--green);
+        color: var(--white);
+        border-radius: 3.2rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-top: 1.6rem;
+        transition: .3s ease;
 
-.new-title {
-    font-size: 2.6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-}
+        &:hover {
+            opacity: .9;
+        }
+    }
 
-.new-subtitle {
-    font-size: 2.6rem;
-    text-transform: lowercase;
-    text-align: center;
-    font-weight: 500;
-}
+    &-text {
+        margin-top: 2rem;
+        gap: 0.2rem;
+    }
 
-.new-description {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-}
+    &-title {
+        font-size: 2.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
 
-.new-nav {
-    color: var(--main-black);
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    box-shadow: 0px 1px 8px rgba(89, 95, 99, 0.2);
-}
+    &-subtitle {
+        font-size: 2.6rem;
+        text-transform: lowercase;
+        text-align: center;
+        font-weight: 500;
+    }
 
-.new-nav:after {
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 0.8rem;
+    &-description {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    &-nav {
+        color: var(--main-black);
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        box-shadow: 0px 1px 8px rgba(89, 95, 99, 0.2);
+
+        &:after {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 0.8rem;
+        }
+    }
+
+    &-button-prev,
+    &-button-next {
+        position: absolute;
+        top: 50%;
+
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
 }
 
 .swiper-container-wrap {
@@ -722,16 +769,6 @@ img {
 }
 
 
-.new-button-prev,
-.new-button-next {
-    position: absolute;
-    top: 50%;
-
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
 
 /* Убедитесь, что .container не обрезает содержимое */
 
@@ -1639,7 +1676,7 @@ footer {
 
 .head-type>p {
     padding: 1.5rem 3.6rem;
-    background: var(--green);
+    background: var(--accent);
     color: var(--white);
     border-radius: 0 1.6rem 1.6rem 0;
     margin-left: -2rem;
@@ -1732,6 +1769,10 @@ footer {
     color: var(--main-gray);
     font-weight: 500;
     padding: 0rem 4rem;
+
+    & p {
+        font-size: 2.5rem;
+    }
 }
 
 .product-section .about-top .title {
@@ -1827,7 +1868,7 @@ footer {
             max-width: 31.2rem;
             width: 100%;
             padding: 1.3rem;
-            background: $orange;
+            background: var(--accent);
             font-size: 1.8rem;
             font-weight: 600;
             color: $white;
@@ -2180,7 +2221,7 @@ footer {
             }
 
             & p {
-                background: $orange;
+                background: var(--accent);
                 font-size: 1.8rem;
                 font-weight: 600;
                 color: $white;

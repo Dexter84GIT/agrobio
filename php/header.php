@@ -7,11 +7,11 @@
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/dist/bundle.css">
-    <title>Agrobioprom</title>
+    <title><?php the_title(); ?></title>
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <main class="main">
         <?php include get_template_directory() . '/inc/page-main/patterns.php'; ?>
         <header class="main-header">
