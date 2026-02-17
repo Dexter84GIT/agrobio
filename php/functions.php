@@ -182,3 +182,31 @@ $pageType = get_template_directory() . '/functions/page_type.php';
 if (file_exists($pageType)) {
     require_once $pageType;
 }
+
+// поиск по сайту
+
+$search = get_template_directory() . '/functions/search.php';
+if (file_exists($search)) {
+    require_once $search;
+}
+
+// скрываем таксономии из стандартных метабоксов
+
+add_action('admin_menu', function () {
+    remove_meta_box('vet_disease_petsdiv', 'product_card', 'side');
+    remove_meta_box('vet_treatmentdiv', 'product_card', 'side');
+    remove_meta_box('vet_form_petsdiv', 'product_card', 'side');
+    remove_meta_box('vet_animal_type_petsdiv', 'product_card', 'side');
+    remove_meta_box('vet_disease_cattlediv', 'product_card', 'side');
+    remove_meta_box('vet_animal_type_cattlediv', 'product_card', 'side');
+    remove_meta_box('bee_product_groupdiv', 'product_card', 'side');
+    remove_meta_box('bee_biotechdiv', 'product_card', 'side');
+    remove_meta_box('bee_feeddiv', 'product_card', 'side');
+    remove_meta_box('bee_goodsdiv', 'product_card', 'side');
+});
+
+// отключаем гутенберг
+
+add_filter('use_block_editor_for_post', '__return_false', 10);
+add_filter('use_block_editor_for_post_type', '__return_false', 10);
+

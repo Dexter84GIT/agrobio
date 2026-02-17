@@ -61,7 +61,6 @@
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="<?php bloginfo('template_directory');?>/js/swiper.js"></script>
     <script src="<?php bloginfo('template_directory');?>/dist/main.js"></script>
 </body>
 

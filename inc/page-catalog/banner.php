@@ -1,14 +1,22 @@
-        <section class="banner">
-            <div class="container">
-                <div class="list df fdc gap100">
+<?php if (have_rows("page_banners")): ?>
+    <section class="banner">
+        <div class="container">
+            <div class="list df fdc gap100">
+                <?php while (have_rows('page_banners')):
+                    the_row();
+                    $img = get_sub_field('image');
+                    $text = get_sub_field('text');
+                    ?>
                     <div class="item df gap30 aic">
                         <div class="img">
-                            <img src="<?php bloginfo('template_directory'); ?>/img/catalog-page/banner.png" alt="banner">
+                            <img src="<?php echo esc_html($img); ?>" alt="banner">
                         </div>
                         <div class="text">
-                            <p>Для комфортной и безопасной работы с ульем мы предлагаем полный комплект защитной экипировки: специальные комбинезоны из прочных материалов с защитными манжетами, маски-сетки с жестким каркасом для максимальной защиты лица, перчатки с фиксаторами, надежную обувь и специальные бахилы. В ассортименте также представлен профессиональный дымарь для усмирения пчел во время работы. Все средства защиты разработаны с учетом потребностей пчеловодов и обеспечивают максимальную безопасность при взаимодействии с пчелиными семьями.</p>
+                            <p><?php echo $text; ?></p>
                         </div>
                     </div>
-                </div>
+                <?php endwhile; ?>
             </div>
-        </section>
+        </div>
+    </section>
+<?php endif; ?>

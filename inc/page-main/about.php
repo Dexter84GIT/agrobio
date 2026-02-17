@@ -1,30 +1,27 @@
-        <section class="about">
-            <div class="container">
-                <div class="about-content df aic">
-                    <div class="about-left">
-                        <p class="about-title">О компании</p>
-                        <div class="about-text df fdc">
-                            <p>АО «Агробиопром» – это российская компания, которая более 30 лет создает
-                                высококачественные и безопасные решения для здоровья
-                                и благополучия животных. </p>
-                            <p>Мы объединяем богатый опыт в пчеловодстве с современными технологиями в ветеринарии,
-                                стремясь обеспечить профессиональный уход за всеми видами животных. Сегодня мы также
-                                предлагаем препараты для мелких домашних животных
-                                и лекарства для фермерских хозяйств.</p>
-                            <p>Мы продолжаем двигаться вперед, сохраняя верность нашим принципам и стремясь к
-                                совершенству в каждой детали нашей работы. Вместе с вами мы создаем будущее, где
-                                здоровье животных – наш главный приоритет.</p>
-                        </div>
-                        <a href="/about" class="about-button">Подробнее</a>
-                    </div>
-                    <div class="about-right df fdc">
-                        <a href="/history" class="">История</a>
-                        <a href="/mission" class="">Миссия</a>
-                        <a href="/healing-systems" class="">Системы лечения</a>
-                        <a href="/production" class="">Производство</a>
-                        <a href="/znak" class="">Честный знак</a>
-                        <a href="/career" class="">Карьера</a>
-                    </div>
+<section class="about">
+    <div class="container">
+        <div class="about-content df aic">
+            <div class="about-left df fdc">
+                <p class="about-title">О компании</p>
+                <div class="about-text df fdc">
+                    <?php
+                        $text = get_field('about_text');
+                    if (!empty($text)): ?>
+                        <?php echo $text; ?>
+                    <?php else: ?>
+                        <p>Текст отсутствует</p>
+                    <?php endif; ?>
                 </div>
+                <a href="/about" class="about-button">Подробнее</a>
             </div>
-        </section>
+            <div class="about-right df fdc">
+                <a href="/history" class="">История</a>
+                <a href="/mission" class="">Миссия</a>
+                <a href="/healing-systems" class="">Системы лечения</a>
+                <a href="/production" class="">Производство</a>
+                <a href="/znak" class="">Честный знак</a>
+                <a href="/career" class="">Карьера</a>
+            </div>
+        </div>
+    </div>
+</section>
